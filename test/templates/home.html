@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My homepage</title>
+</head>
+<body>
+    <h1>Hello, {{user}}</h1>
+    {% for prod in products %}
+    <h2> {{ prod.name }}</h2>
+    <p> {{ prod.cost }}</p>
+    {% endfor %}
+</body>
+</html>

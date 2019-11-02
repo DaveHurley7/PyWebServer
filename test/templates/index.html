@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My test site</title>
+</head>
+<body>
+    <h1>Welcome to the webpage</h1>
+    <p>This webpage is returned to the user</p>
+    <form action="login.py" method="POST" enctype="multipart/form-data">
+        <input title="Username" name="user" type="text">
+        <input title="Password" name="pwd" type="password"><br>
+        <input title="filepic" type="file" name="pic">
+        <input title="filetxt" type="file" name="doc">
+        <input type="submit" value="Login">
+    </form>
+    {#<p>This line will be commented out</p>#}
+    <img src="resources/alert_popup.PNG">
+    <img src="resources/func_call.PNG">
+    <a href="list/item">Item</a>
+    {#{% for x in y %}
+        {% for a in b %}
+        {% endfor %}
+    {% endfor %}#}
+</body>
+</html>

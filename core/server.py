@@ -38,7 +38,6 @@ def start():
             conn.send(res)
             conn.close()
             continue
-        print(load_req.decode(errors="None"))
         req_div = load_req.index(b'\r\n\r\n')
         header_info = load_req[:req_div].decode().split("\r\n")
         data_bounds = [info[info.index("boundary")+9:] for info in header_info if "boundary" in info]
